@@ -235,6 +235,8 @@ def main():
             changefilter = input('\nWould you like to change your filter? Enter yes or no.\n')
             if changefilter.lower() != 'yes':
                 break
+            else:
+                print("Invalid input. Please enter 'yes' or 'no'.")
 
         df = load_data(city, month, day)
 
