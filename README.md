@@ -8,10 +8,10 @@ This project is an interactive tool to explore data related to bike share system
 Raw data is displayed upon request by the user.
 
 ### Files used
-wahsington.csv
-new_york_city.csv
-chicago.csv
-bikeshare.py
++ wahsington.csv
++ new_york_city.csv
++ chicago.csv
++ bikeshare.py
 
 ### Credits
 ## Resources used
