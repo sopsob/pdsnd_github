@@ -158,7 +158,9 @@ def station_stats(df):
     print('Most Popular End Station:', popular_end_station)
 
     # display most frequent combination of start station and end station trip
+    #combines start and end station in new column
     df['station_combi'] = df['Start Station'] + df['End Station']
+    #extracts the most commen value for start/end station combination
     popular_station_combi = df['station_combi'].mode()[0]
     print('Most Popular Trip:', popular_station_combi)    
 
