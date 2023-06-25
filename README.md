@@ -2,10 +2,10 @@
 25.06.2023
 
 ### Exploring bikeshare data
-Replace the Project Title
 
 ### Description
-This project is an interactive tool to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.
+This project is an interactive tool to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. It computes a variety of descriptive statistics e.g. popular times of travel.
+Raw data is displayed upon request by the user.
 
 ### Files used
 wahsington.csv
