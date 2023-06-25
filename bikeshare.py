@@ -30,31 +30,38 @@ def get_filters():
     while True:
         city = input("Which city do you want to explore (Chicago, New York City, or Washington): ").lower()
 
+        #checks if user input matches valid cities
         if city in valid_cities:
             break
+        #handles incorrect user input
         else:
             print("Invalid input. Please enter a valid city.")
 
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month and changes to lower case string
     valid_months = ["january", "february", "march", "april", "may", "june", "all"]
     while True:
         month = input("Please choose a month (January, February, March, April, May, June or all): ").lower()
 
+        #checks if user input matches valid months
         if month in valid_months:
             break
+        #handles incorrect user input
         else:
             print("Invalid input. Please enter a valid month.")
 
-    # get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week and changes to lower case string
     valid_days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "all"]
     while True:
         day = input("Please choose a day (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or all): ").lower()
 
+        #checks if user input matches valid days
         if day in valid_days:
             break
+        #handles incorrect user input
         else:
             print("Invalid input. Please enter a valid weekday.")
- 
+    
+    #shows the selected filters
     print("Data Selection city: {}/ month: {}/ day: {}".format(city, month, day).title()) 
 
     print('-'*40)
