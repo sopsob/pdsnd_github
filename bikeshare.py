@@ -236,8 +236,17 @@ def show_raw_data(df, batch_size=5):
             print("Invalid input. Please enter 'yes' or 'no'.")
 
 def main():
-    while True:
-        city, month, day = get_filters()
+    while True:       
+        while True:
+            city, month, day = get_filters()
+
+            #ask user if filters need to be changed and restarts if yes
+            changefilter = input('\nWould you like to change your filter? Enter yes or no.\n')
+            if changefilter.lower() != 'yes':
+                break
+            else:
+                print("Invalid input. Please enter 'yes' or 'no'.")
+
         df = load_data(city, month, day)
 
         time_stats(df)
